@@ -1,42 +1,30 @@
 import React from 'react'
-import Card from './Card';
-import { useState } from 'react';
+import Card from './Card'
 
-const Cards = (props) => {
-    let courses = props.courses;
-    let category = props.category;
-    const [likedCourses, setLikedCourses] = useState([]);
-    
-    function getCourses() {
-        if(category === "All") {
-            let allCourses = [];
-            Object.values(courses).forEach(array => {
-                array.forEach(courseData => {
-                    allCourses.push(courseData);
+// import Card from "./Card"
+
+const Cards = ({cardData, setCardState, category}) => {
+
+    const dataArray = () => {
+        if(category == "All") {
+            let allCoursesArray = []
+            Object.values(cardData).forEach((data) => {
+                data.forEach((courseData) => {
+                    allCoursesArray.push(courseData)
                 })
             })
-            console.log(allCourses)
-            return allCourses;
+            return allCoursesArray
         }
-        else {
-            //main sirf specific categiry ka data array krunga  
-            return courses[category];      
-        }
-
     }
 
-  return (
-    <div className="flex flex-wrap justify-center gap-4 mb-4">
-      {
-        getCourses().map( (course) => (
-            <Card key={course.id} 
-            course = {course} 
-            likedCourses={likedCourses}
-            setLikedCourses={setLikedCourses}/>
-        ))
-      }
-    </div>
-  )
+
+    // console.log(cardData)
+    dataArray()
+    console.log("Done")
+    return (
+        <div>
+        </div>
+    )
 }
 
 export default Cards
