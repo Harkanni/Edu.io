@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 body {
@@ -12,7 +12,6 @@ body {
     width: 80%;
     height: 100vh;
     margin: auto;
-    background-color: grey;
     padding-block: 1rem;
 }
 
@@ -32,7 +31,7 @@ nav {
     align-items: center;
 }
 
-li.navItem {
+li.navItem, li.navItemActive {
     list-style: none;
     border: none;
     background-color: #2c2f3f;
@@ -40,4 +39,59 @@ li.navItem {
     padding: .5rem;
     border-radius: .5rem;
     cursor: pointer;
+    /* min-width: 50px; */
+}
+
+li.navItemActive {
+    border: 1px solid #fff;
+}
+
+.cardContainer {
+    margin: 1rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card {
+    width: 80%;
+    min-height: 350px;
+    background-color: #2a2b44;
+    color: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.cardImage {
+    height: 100%;
+    width: 100%;
+}
+.cardDescription {
+    padding: 1rem;
+}
+.cardDescription p {
+    padding-top: .5rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+@media screen and  (min-width: 960px) {
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: start;
+        /* justify-content: space-between; */
+        gap: 1rem;
+    }
+
+    .card {
+        width: calc(100%/3 - .67rem);
+        height: 380px;
+    }
+
+    .cardDescription  {
+        font-size: .69rem;
+    }
 }
