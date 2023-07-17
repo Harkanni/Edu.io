@@ -21,11 +21,17 @@ Installation
 To run the project locally, follow these steps:
 
     Clone the repository: git clone https://github.com/ramgpal/TopCourseWebsite.git
+    
     Navigate to the project directory: cd top-course-website
+    
     Install the dependencies: npm install
+    
     Install the react-icons: npm install react-icons
+    
     Intall the react-toastify: npm i react-toastify
+    
     Start the development server: npm start
+    
     Open your browser and visit http://localhost:3000 to access the website.
 
 Contributing
