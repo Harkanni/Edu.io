@@ -1,16 +1,17 @@
-Edu.io Website
+# Edu.io Website
 
 Welcome to Edu.io Website! This project is a web application built with ReactJS to showcase and recommend top courses in various domains.
-Features
+Features:
 
-    Browse and search for top courses in different categories.
-    View detailed course information, including title & description.
-    Sort courses based on different catagories Development, Business, Design & Lifestyle.
-    Like courses as favorites or dislike.
-    Interactive user interface for an enhanced browsing experience.
+   * Browse and search for top courses in different categories.
+   * View detailed course information, including title & description.
+   * Sort courses based on different categories Development, Business, Design & Lifestyle.
+   * Like courses as favorites or dislike.
+   * Interactive user interface for an enhanced browsing experience.
 
-Demo Video
-[alt!]
+Demo Picture
+
+![A screenshot of Edu.io website](./Edu.ioSS.png)
 
 "Click on any part of the image to preview the TOPCourseWebsite."
 
