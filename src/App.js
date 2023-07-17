@@ -31,9 +31,6 @@ async function setData() {
       setData()
   }, [])
 
-function tstst    ()   {
-  
-}
 
   return (
     <div >
